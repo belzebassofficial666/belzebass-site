@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BELZEBASS | Official Website</title>
+
+<meta name="description" content="BELZEBASS - Driven By Anxiety Since 2008. Recently switched to a live dawless setup. Different approach, same energy.">
+
+<meta property="og:title" content="BELZEBASS">
+<meta property="og:description" content="Driven By Anxiety Since 2008">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:url('img/hero.jpg') center center/cover no-repeat;
+filter:brightness(0.35);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+width:90%;
+max-width:900px;
+}
+
+.logo{
+width:350px;
+max-width:80%;
+margin-bottom:30px;
+filter:drop-shadow(0 0 20px rgba(255,255,255,.15));
+}
+
+.bio{
+font-size:1rem;
+line-height:1.8;
+letter-spacing:3px;
+text-transform:uppercase;
+max-width:700px;
+margin:auto;
+}
+
+.scroll{
+margin-top:40px;
+font-size:2rem;
+opacity:.6;
+animation:float 2s infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(10px);}
+}
+
+section{
+padding:120px 10%;
+}
+
+.section-title{
+font-size:1rem;
+letter-spacing:8px;
+text-transform:uppercase;
+margin-bottom:40px;
+border-left:2px solid #fff;
+padding-left:20px;
+}
+
+.video-container{
+display:flex;
+justify-content:center;
+}
+
+.video-wrapper{
+width:100%;
+max-width:1000px;
+aspect-ratio:16/9;
+}
+
+.video-wrapper iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+opacity:.85;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:40px;
+}
+
+.socials a{
+color:#fff;
+text-decoration:none;
+border:1px solid rgba(255,255,255,.2);
+padding:15px 30px;
+letter-spacing:2px;
+transition:.3s;
+}
+
+.socials a:hover{
+background:#fff;
+color:#000;
+}
+
+.mail{
+text-align:center;
+margin-top:50px;
+font-size:1rem;
+letter-spacing:2px;
+}
+
+.mail a{
+color:#fff;
+text-decoration:none;
+}
+
+footer{
+padding:50px;
+text-align:center;
+font-size:.8rem;
+opacity:.5;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+@media(max-width:768px){
+
+.logo{
+width:260px;
+}
+
+.bio{
+font-size:.85rem;
+letter-spacing:2px;
+}
+
+section{
+padding:90px 6%;
+}
+
+.gallery img{
+height:260px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="img/logo.png" alt="BELZEBASS" class="logo">
+
+<div class="bio">
+
+<p>DRIVEN BY ANXIETY SINCE 2008.</p>
+<br>
+<p>RECENTLY SWITCHED TO A LIVE DAWLESS SETUP.</p>
+<p>DIFFERENT APPROACH, SAME ENERGY.</p>
+
+</div>
+
+<div class="scroll">↓</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">VIDEO</h2>
+
+<div class="video-container">
+
+<div class="video-wrapper">
+
+<iframe
+src="https://www.youtube.com/embed/-_eLpFota_M"
+title="BELZEBASS"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">GALLERY</h2>
+
+<div class="gallery">
+
+<img src="img/gallery1.jpg" alt="">
+<img src="img/gallery2.jpg" alt="">
+<img src="img/gallery3.jpg" alt="">
+<img src="img/gallery4.jpg" alt="">
+<img src="img/gallery5.jpg" alt="">
+<img src="img/gallery6.jpg" alt="">
+<img src="img/gallery7.jpg" alt="">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">CONNECT</h2>
+
+<div class="socials">
+
+<a href="https://www.instagram.com/belzebass_official" target="_blank">
+INSTAGRAM
+</a>
+
+<a href="https://soundcloud.com/belzebass" target="_blank">
+SOUNDCLOUD
+</a>
+
+<a href="https://open.spotify.com/artist/36vcmmXCPj6P7b2p3E5VPI" target="_blank">
+SPOTIFY
+</a>
+
+<a href="https://belzebass.bandcamp.com" target="_blank">
+BANDCAMP
+</a>
+
+</div>
+
+<div class="mail">
+
+<a href="mailto:belzebassofficial@gmail.com">
+belzebassofficial@gmail.com
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2025 BELZEBASS · ALL RIGHTS RESERVED
+
+</footer>
+
+</body>
+</html>
