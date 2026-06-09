@@ -248,8 +248,6 @@ gap:0;
 width:32px;
 height:32px;
 }
-
-}
     
 section{
 padding:90px 6%;
@@ -306,8 +304,6 @@ object-fit:contain;
 
 <section>
 
-</div>  
-
 <div class="socials">
 
 <a href="https://www.instagram.com/belzebass_official" target="_blank">
@@ -332,9 +328,7 @@ object-fit:contain;
   
 </div>
 
-<section>  
-
-</div>  
+<section> 
   
 <div class="video-container">
 
@@ -377,9 +371,7 @@ allowfullscreen>
 
 </div>
 
-</section>    
-
-</div>
+</section>   
 
 <div class="mail">
 
@@ -402,8 +394,18 @@ BOOKING & INFO
 <script>
 
 function openImage(src){
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("lightbox-img").src = src;
+    const lightbox = document.getElementById("lightbox");
+    const img = document.getElementById("lightbox-img");
+
+    img.src = src;
+    lightbox.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
 function closeImage(){
